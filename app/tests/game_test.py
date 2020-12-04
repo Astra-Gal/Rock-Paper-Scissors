@@ -8,6 +8,9 @@ class TestGame(unittest.TestCase):
         self.player1 = Player ("Rocky Balboa", "Rock")
         self.player2 = Player("Paper Balboa", "Paper")
         self.player3 = Player("Scissors Balboa", "Scissors")
+        self.player4 = Player("Chippy Balboa", "Rock")
+        self.player5 = Player("Rippy Balboa", "Paper")
+        self.player6 = Player("Snippy Balboa", "Scissors")
 
 # rock tests
 
@@ -38,3 +41,17 @@ class TestGame(unittest.TestCase):
     def test_scissors_loses_to_rock(self):
         result = play_rps(self.player3, self.player1)
         self.assertEqual(self.player1, result)
+
+#draw tests
+
+    def test_rock_rock_draws(self):
+        result = play_rps(self.player1, self.player4)
+        self.assertEqual(None, result)
+
+    def test_paper_paper_draws(self):
+        result = play_rps(self.player2, self.player5)
+        self.assertEqual(None, result)
+
+    def test_scissors_scissors_draws(self):
+        result = play_rps(self.player3, self.player6)
+        self.assertEqual(None, result)

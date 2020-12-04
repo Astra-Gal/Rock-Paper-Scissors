@@ -18,3 +18,9 @@ class TestGame(unittest.TestCase):
     def test_rock_loses_to_paper(self):
         result = play_rps(self.player1, self.player2)
         self.assertEqual(self.player2, result)
+
+# paper tests
+
+    def test_paper_beats_rock(self):
+        result = play_rps(self.player1, self.player2)
+        self.assertEqual(self.player2, result)

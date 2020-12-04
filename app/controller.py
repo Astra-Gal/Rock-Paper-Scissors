@@ -4,5 +4,5 @@ from app.models.game import *
 from app.models.player import *
 
 @app.route('/')
-def index():
+def hello_world():
     return "hello world"

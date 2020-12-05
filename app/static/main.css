@@ -1,0 +1,23 @@
+
+body {
+    background-color: rgb(1, 1, 5);
+    color: ghostwhite;
+}
+
+#homeward {
+    list-style-type: none;
+}
+
+#homeward > a {
+    text-decoration: none;
+    color: ghostwhite;
+
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tiny-joke {
+    font-size: 0.5em;
+}

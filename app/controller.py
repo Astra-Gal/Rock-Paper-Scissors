@@ -4,5 +4,5 @@ from app.models.game import *
 from app.models.player import *
 
 @app.route('/')
-def hello_world():
-    return "hello world"
+def index():
+    return render_template('index.html', title='Home', font_url='https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet')

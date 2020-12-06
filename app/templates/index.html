@@ -1,59 +1,64 @@
 {% extends "base.html" %}
 
 {% block content %}
+<header>
+<h1>&#9889; Are You Ready to <span id="big-rock">Rock<span id="tiny-joke"> (Paper, Scissors) </span>? </span>&#9889;</h1>
+</header>
 
-<h1>&#9889; Are You Ready to <span id="big-rock">Rock<span id="tiny-joke">(Paper, Scissors)</span>? </span>&#9889;</h1>
-
-<form class="form-inline" action="/play-game" method="post">
-    <fieldset>
-        <legend><b>Choose your first player...</b></legend>
-        <br>
-        <input type="radio" name="player1-name" id="rocky-balboa" value="Rocky Balboa" checked="checked">
-        <label for="rocky-balboa">Rocky Balboa</label><br>
-        <input type="radio" name="player1-name" id="paper-balboa" value="Paper Balboa">
-        <label for="paper-balboa">Paper Balboa</label><br>
-        <input type="radio" name="player1-name" id="scissors-balboa" value="Scissors Balboa">
-        <label for="scissors-balboa">Scissors Balboa</label>
-        <br>
-        <br>
-        <legend class="inner-legend">... and their weapon of choice</legend>
-        <br>
-        <input type="radio" name="player1-choice" id="rock" value="Rock" checked="checked">
-        <label for="rock">Rock</label>
-        <br>
-        <input type="radio" name="player1-choice" id="paper" value="Paper">
-        <label for="paper">Paper</label>
-        <br>
-        <input type="radio" name="player1-choice" id="scissors" value="Scissors">
-        <label for="scissors">Scissors</label>
-        <br>
-        <br>
-        <legend><b>Choose your second player...</b></legend>
-        <br>
-        <input type="radio" name="player2-name" id="chippy-balboa" value="Chippy Balboa" checked="checked">
-        <label for="chippy-balboa">Chippy Balboa</label><br>
-        <input type="radio" name="player2-name" id="rippy-balboa" value="Rippy Balboa">
-        <label for="rippy-balboa">Rippy Balboa</label><br>
-        <input type="radio" name="player2-name" id="snippy-balboa" value="Snippy Balboa">
-        <label for="snippy-balboa">Snippy Balboa</label><br>
-        <br>
-        <br>
-        <legend class="inner-legend">... and their weapon of choice</legend>
-        <br>
-        <input type="radio" name="player2-choice" id="rock" value="Rock" checked="checked">
-        <label for="rock">Rock</label>
-        <br>
-        <input type="radio" name="player2-choice" id="paper" value="Paper">
-        <label for="paper">Paper</label>
-        <br>
-        <input type="radio" name="player2-choice" id="scissors" value="Scissors">
-        <label for="scissors">Scissors</label>
-        <div id="form-footer">
-        <br>
-        <br>
-        <button type="submit" class="submit_button" value="lets-rock">Let's Rock!!!         &#10154;    &#10154;    &#10154;</button>
-        </div>
-    </fieldset>
-</form>
+<body>
+    <main>
+        <form class="form-inline" action="/play-game" method="post">
+            <fieldset>
+                <legend><b>Choose your first player...</b></legend>
+                <br>
+                <input type="radio" name="player1-name" id="rocky-balboa" value="Rocky Balboa" checked="checked">
+                <label for="rocky-balboa">Rocky Balboa</label><br>
+                <input type="radio" name="player1-name" id="paper-balboa" value="Paper Balboa">
+                <label for="paper-balboa">Paper Balboa</label><br>
+                <input type="radio" name="player1-name" id="scissors-balboa" value="Scissors Balboa">
+                <label for="scissors-balboa">Scissors Balboa</label>
+                <br>
+                <br>
+                <legend class="inner-legend">... and their weapon of choice</legend>
+                <br>
+                <input type="radio" name="player1-choice" id="rock" value="Rock" checked="checked">
+                <label for="rock">Rock</label>
+                <br>
+                <input type="radio" name="player1-choice" id="paper" value="Paper">
+                <label for="paper">Paper</label>
+                <br>
+                <input type="radio" name="player1-choice" id="scissors" value="Scissors">
+                <label for="scissors">Scissors</label>
+                <br>
+                <br>
+                <legend><b>Choose your second player...</b></legend>
+                <br>
+                <input type="radio" name="player2-name" id="chippy-balboa" value="Chippy Balboa" checked="checked">
+                <label for="chippy-balboa">Chippy Balboa</label><br>
+                <input type="radio" name="player2-name" id="rippy-balboa" value="Rippy Balboa">
+                <label for="rippy-balboa">Rippy Balboa</label><br>
+                <input type="radio" name="player2-name" id="snippy-balboa" value="Snippy Balboa">
+                <label for="snippy-balboa">Snippy Balboa</label><br>
+                <br>
+                <br>
+                <legend class="inner-legend">... and their weapon of choice</legend>
+                <br>
+                <input type="radio" name="player2-choice" id="rock" value="Rock" checked="checked">
+                <label for="rock">Rock</label>
+                <br>
+                <input type="radio" name="player2-choice" id="paper" value="Paper">
+                <label for="paper">Paper</label>
+                <br>
+                <input type="radio" name="player2-choice" id="scissors" value="Scissors">
+                <label for="scissors">Scissors</label>
+                <div id="form-footer">
+                <br>
+                <br>
+                <button type="submit" class="submit_button" value="lets-rock">Let's Rock!!!         &#10154;    &#10154;    &#10154;</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
 
 {% endblock %}

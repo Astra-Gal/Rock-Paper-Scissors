@@ -2,23 +2,58 @@
 
 {% block content %}
 
-<h1>Are You Ready to Rock <span id="tiny-joke">(Paper, Scissors)</span> ?</h1>
+<h1>&#9889; Are You Ready to <span id="big-rock">Rock<span id="tiny-joke">(Paper, Scissors)</span>? </span>&#9889;</h1>
 
 <form class="form-inline" action="/play-game" method="post">
-    <label for="player1-name">Player One Name</label>
-    <input type="text" name="player1-name" id="player1-name">
-
-    <label for="player1-choice">Player One Choice</label>
-    <input type="text" name="player1-choice" id="player1-choice">
-
-    <label for="player2-name">Player Two Name</label>
-    <input type="text" name="player2-name" id="player2-name">
-
-    <label for="player2-choice">Player Two Choice</label>
-    <input type="text" name="player2-choice" id="player2-choice">
-
-    <input type="submit" value="Let's Rock!!!">
+    <fieldset>
+        <legend><b>Choose your first player...</b></legend>
+        <br>
+        <input type="radio" name="player1-name" id="rocky-balboa" value="Rocky Balboa" checked="checked">
+        <label for="rocky-balboa">Rocky Balboa</label><br>
+        <input type="radio" name="player1-name" id="paper-balboa" value="Paper Balboa">
+        <label for="paper-balboa">Paper Balboa</label><br>
+        <input type="radio" name="player1-name" id="scissors-balboa" value="Scissors Balboa">
+        <label for="scissors-balboa">Scissors Balboa</label>
+        <br>
+        <br>
+        <legend class="inner-legend">... and their weapon of choice</legend>
+        <br>
+        <input type="radio" name="player1-choice" id="rock" value="Rock" checked="checked">
+        <label for="rock">Rock</label>
+        <br>
+        <input type="radio" name="player1-choice" id="paper" value="Paper">
+        <label for="paper">Paper</label>
+        <br>
+        <input type="radio" name="player1-choice" id="scissors" value="Scissors">
+        <label for="scissors">Scissors</label>
+        <br>
+        <br>
+        <legend><b>Choose your second player...</b></legend>
+        <br>
+        <input type="radio" name="player2-name" id="chippy-balboa" value="Chippy Balboa" checked="checked">
+        <label for="chippy-balboa">Chippy Balboa</label><br>
+        <input type="radio" name="player2-name" id="rippy-balboa" value="Rippy Balboa">
+        <label for="rippy-balboa">Rippy Balboa</label><br>
+        <input type="radio" name="player2-name" id="snippy-balboa" value="Snippy Balboa">
+        <label for="snippy-balboa">Snippy Balboa</label><br>
+        <br>
+        <br>
+        <legend class="inner-legend">... and their weapon of choice</legend>
+        <br>
+        <input type="radio" name="player2-choice" id="rock" value="Rock" checked="checked">
+        <label for="rock">Rock</label>
+        <br>
+        <input type="radio" name="player2-choice" id="paper" value="Paper">
+        <label for="paper">Paper</label>
+        <br>
+        <input type="radio" name="player2-choice" id="scissors" value="Scissors">
+        <label for="scissors">Scissors</label>
+        <div id="form-footer">
+        <br>
+        <br>
+        <button type="submit" class="submit_button" value="lets-rock">Let's Rock!!!         &#10154;    &#10154;    &#10154;</button>
+        </div>
+    </fieldset>
 </form>
 
 {% endblock %}
-<!-- Do I need a for loop to go through the names and list their choices after you've picked? -->

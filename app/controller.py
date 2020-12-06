@@ -7,6 +7,10 @@ from app.models.player import *
 def index():
     return render_template('index.html', title='Home')
 
+@app.route('/welcome')
+def welcome():
+    return render_template('welcome.html', title="Welcome")
+
 
 # this returns an f string to the browser with the name and choice of the victor
 @app.route('/play-game', methods=['POST'])

@@ -1,12 +1,24 @@
 {% extends "base.html" %}
 
-<!-- {% block styles %}
-{{ super }}
-
-{% endblock %} -->
-
 {% block content %}
 
 <h1>Are You Ready to Rock <span id="tiny-joke">(Paper, Scissors)</span> ?</h1>
 
+<form class="form-inline" action="/play-game" method="post">
+    <label for="player1-name">Player One Name</label>
+    <input type="text" name="player1-name" id="player1-name">
+
+    <label for="player1-choice">Player One Choice</label>
+    <input type="text" name="player1-choice" id="player1-choice">
+
+    <label for="player2-name">Player Two Name</label>
+    <input type="text" name="player2-name" id="player2-name">
+
+    <label for="player2-choice">Player Two Choice</label>
+    <input type="text" name="player2-choice" id="player2-choice">
+
+    <input type="submit" value="Let's Rock!!!">
+</form>
+
 {% endblock %}
+<!-- Do I need a for loop to go through the names and list their choices after you've picked? -->

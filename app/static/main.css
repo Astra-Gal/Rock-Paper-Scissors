@@ -4,12 +4,26 @@ body {
     color: rgb(1, 1, 5);
 }
 
-#homeward {
+header {
+    display: flex;
+}
+
+#site-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#site-header > ul {
+    display: flex;
+}
+
+
+#site-header > nav > ul > li {
     list-style-type: none;
     font-family: Arial, sans-serif;
 }
 
-#homeward > a {
+#site-header > nav > ul > li > a {
     text-decoration: none;
     color: rgb(1, 1, 5)
 
